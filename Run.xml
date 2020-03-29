@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Pages" verbose="1" parallel="classes" thread-count="2">
+
+	<test name="Page-Run.">
+		
+		<classes>
+		   <class name="com.qa.pages.HomePage" />
+		   <class name="com.qa.pages.LoginPage" />
+		</classes>
+	</test>
+
+</suite>
