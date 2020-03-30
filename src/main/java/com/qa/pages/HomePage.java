@@ -49,7 +49,7 @@ public class HomePage {
 		System.out.println("apply");
 	}
 	
-	@Test
+	@Test(priority=-1)
 	public void delete() {
 		System.out.println("delete");
 	}
