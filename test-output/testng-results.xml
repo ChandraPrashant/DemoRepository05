@@ -1,126 +1,265 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="2" failed="0" total="8" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Pages" duration-ms="31" started-at="2020-03-30T13:16:56Z" finished-at="2020-03-30T13:16:56Z">
+  <suite name="Pages" duration-ms="1735" started-at="2020-03-30T16:30:31Z" finished-at="2020-03-30T16:30:33Z">
     <groups>
       <group name="Smoke">
-        <method signature="HomePage.apply()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="apply" class="com.qa.pages.HomePage"/>
-        <method signature="LoginPage.compose()[pri:0, instance:com.qa.pages.LoginPage@51565ec2]" name="compose" class="com.qa.pages.LoginPage"/>
+        <method signature="HomePage.apply()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="apply" class="com.qa.pages.HomePage"/>
+        <method signature="LoginPage.compose()[pri:0, instance:com.qa.pages.LoginPage@71318ec4]" name="compose" class="com.qa.pages.LoginPage"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="Page-Run." duration-ms="31" started-at="2020-03-30T13:16:56Z" finished-at="2020-03-30T13:16:56Z">
+    <test name="Page-Run." duration-ms="1735" started-at="2020-03-30T16:30:31Z" finished-at="2020-03-30T16:30:33Z">
       <class name="com.qa.pages.HomePage">
-        <test-method status="PASS" signature="openSystem()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="openSystem" is-config="true" duration-ms="4" started-at="2020-03-30T18:46:55Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="openSystem()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="openSystem" is-config="true" duration-ms="5" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSystem -->
-        <test-method status="PASS" signature="openSystem()[pri:0, instance:com.qa.pages.LoginPage@51565ec2]" name="openSystem" is-config="true" duration-ms="1" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="openSystem()[pri:0, instance:com.qa.pages.LoginPage@71318ec4]" name="openSystem" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSystem -->
-        <test-method status="PASS" signature="lunchBrowser()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="lunchBrowser" is-config="true" duration-ms="1" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="lunchBrowser()[pri:0, instance:com.qa.pages.LoginPage@71318ec4]" name="lunchBrowser" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchBrowser -->
-        <test-method status="PASS" signature="lunchBrowser()[pri:0, instance:com.qa.pages.LoginPage@51565ec2]" name="lunchBrowser" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="lunchBrowser()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="lunchBrowser" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchBrowser -->
-        <test-method status="PASS" signature="EnterURL()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="EnterURL" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="EnterURL()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="EnterURL" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnterURL -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="Login" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="Login" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="apply()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="apply" duration-ms="5" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="apply()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="apply" duration-ms="4" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- apply -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="logout" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="logout" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="Login" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="Login" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="delete()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="delete" duration-ms="1" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="delete()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="delete" duration-ms="1" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delete -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="logout" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="logout" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="abc()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="abc" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="abc()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="abc" duration-ms="1" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abc -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="Login" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="Login" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="logout" is-config="true" duration-ms="1" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="logout" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="Login" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="compose()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="compose" duration-ms="1" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="compose()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="compose" duration-ms="1" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compose -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="logout" is-config="true" duration-ms="1" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="Login" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="logout" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="closeTab()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="closeTab" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="closeTab()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="closeTab" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTab -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="CloseBrowser" is-config="true" duration-ms="1" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="CloseBrowser" is-config="true" duration-ms="3" started-at="2020-03-30T22:00:33Z" finished-at="2020-03-30T22:00:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.qa.pages.LoginPage@51565ec2]" name="CloseBrowser" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.qa.pages.LoginPage@71318ec4]" name="CloseBrowser" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:33Z" finished-at="2020-03-30T22:00:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method status="PASS" signature="shutdown()[pri:0, instance:com.qa.pages.HomePage@55f3ddb1]" name="shutdown" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="shutdown()[pri:0, instance:com.qa.pages.LoginPage@71318ec4]" name="shutdown" is-config="true" duration-ms="1" started-at="2020-03-30T22:00:33Z" finished-at="2020-03-30T22:00:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutdown -->
-        <test-method status="PASS" signature="shutdown()[pri:0, instance:com.qa.pages.LoginPage@51565ec2]" name="shutdown" is-config="true" duration-ms="1" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="shutdown()[pri:0, instance:com.qa.pages.HomePage@a67c67e]" name="shutdown" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:33Z" finished-at="2020-03-30T22:00:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutdown -->
       </class> <!-- com.qa.pages.HomePage -->
-      <class name="com.qa.pages.LoginPage">
-        <test-method status="PASS" signature="EnterURL()[pri:0, instance:com.qa.pages.LoginPage@51565ec2]" name="EnterURL" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+      <class name="com.qa.tests.HomePageTest">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.qa.tests.HomePageTest@5025a98f]" name="test" duration-ms="1" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EnterURL -->
-        <test-method status="PASS" signature="compose()[pri:0, instance:com.qa.pages.LoginPage@51565ec2]" name="compose" duration-ms="4" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        </test-method> <!-- test -->
+      </class> <!-- com.qa.tests.HomePageTest -->
+      <class name="com.qa.tests.LoginTest">
+        <test-method status="FAIL" signature="setup()[pri:0, instance:com.qa.tests.LoginTest@1e127982]" name="setup" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 78
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'HMECL003091', ip: '10.160.251.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0029A903+1550595]
+	Ordinal0 [0x0021A701+1025793]
+	Ordinal0 [0x0019C6E5+509669]
+	Ordinal0 [0x0012FC68+64616]
+	Ordinal0 [0x0012C594+50580]
+	Ordinal0 [0x0014ACE7+175335]
+	Ordinal0 [0x0014A8ED+174317]
+	Ordinal0 [0x00148CDB+167131]
+	Ordinal0 [0x0013144A+70730]
+	Ordinal0 [0x001324D0+74960]
+	Ordinal0 [0x00132469+74857]
+	Ordinal0 [0x002342C7+1131207]
+	GetHandleVerifier [0x003370FD+523789]
+	GetHandleVerifier [0x00336E90+523168]
+	GetHandleVerifier [0x0033E1E7+552695]
+	GetHandleVerifier [0x003378FA+525834]
+	Ordinal0 [0x0022B7FC+1095676]
+	Ordinal0 [0x0023633B+1139515]
+	Ordinal0 [0x002364A3+1139875]
+	Ordinal0 [0x00235425+1135653]
+	BaseThreadInitThunk [0x74E560C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F77A94+228]
+	RtlGetAppContainerNamedObjectPath [0x76F77A64+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 78
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'HMECL003091', ip: '10.160.251.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0029A903+1550595]
+	Ordinal0 [0x0021A701+1025793]
+	Ordinal0 [0x0019C6E5+509669]
+	Ordinal0 [0x0012FC68+64616]
+	Ordinal0 [0x0012C594+50580]
+	Ordinal0 [0x0014ACE7+175335]
+	Ordinal0 [0x0014A8ED+174317]
+	Ordinal0 [0x00148CDB+167131]
+	Ordinal0 [0x0013144A+70730]
+	Ordinal0 [0x001324D0+74960]
+	Ordinal0 [0x00132469+74857]
+	Ordinal0 [0x002342C7+1131207]
+	GetHandleVerifier [0x003370FD+523789]
+	GetHandleVerifier [0x00336E90+523168]
+	GetHandleVerifier [0x0033E1E7+552695]
+	GetHandleVerifier [0x003378FA+525834]
+	Ordinal0 [0x0022B7FC+1095676]
+	Ordinal0 [0x0023633B+1139515]
+	Ordinal0 [0x002364A3+1139875]
+	Ordinal0 [0x00235425+1135653]
+	BaseThreadInitThunk [0x74E560C9+25]
+	RtlGetAppContainerNamedObjectPath [0x76F77A94+228]
+	RtlGetAppContainerNamedObjectPath [0x76F77A64+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:132)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.qa.tests.LoginTest.setup(LoginTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:601)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="freeCrmTitleTest()[pri:0, instance:com.qa.tests.LoginTest@1e127982]" name="freeCrmTitleTest" duration-ms="2" started-at="2020-03-30T22:00:33Z" finished-at="2020-03-30T22:00:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeCrmTitleTest -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTest@1e127982]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:33Z" finished-at="2020-03-30T22:00:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.qa.tests.LoginTest@1e127982]" name="setup" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:33Z" finished-at="2020-03-30T22:00:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="freemCRMLogoTest()[pri:0, instance:com.qa.tests.LoginTest@1e127982]" name="freemCRMLogoTest" duration-ms="1" started-at="2020-03-30T22:00:33Z" finished-at="2020-03-30T22:00:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freemCRMLogoTest -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTest@1e127982]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:33Z" finished-at="2020-03-30T22:00:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.LoginTest -->
+      <class name="com.qa.pages.LoginPage">
+        <test-method status="PASS" signature="compose()[pri:0, instance:com.qa.pages.LoginPage@71318ec4]" name="compose" duration-ms="1" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compose -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.LoginPage@51565ec2]" name="Login" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="EnterURL()[pri:0, instance:com.qa.pages.LoginPage@71318ec4]" name="EnterURL" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterURL -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.LoginPage@71318ec4]" name="Login" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.LoginPage@51565ec2]" name="logout" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="closeTab()[pri:0, instance:com.qa.pages.LoginPage@51565ec2]" name="closeTab" is-config="true" duration-ms="0" started-at="2020-03-30T18:46:56Z" finished-at="2020-03-30T18:46:56Z">
+        <test-method status="PASS" signature="closeTab()[pri:0, instance:com.qa.pages.LoginPage@71318ec4]" name="closeTab" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTab -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.LoginPage@71318ec4]" name="logout" is-config="true" duration-ms="0" started-at="2020-03-30T22:00:31Z" finished-at="2020-03-30T22:00:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
       </class> <!-- com.qa.pages.LoginPage -->
     </test> <!-- Page-Run. -->
   </suite> <!-- Pages -->
