@@ -28,9 +28,9 @@ public class LoginTest {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
+		Thread.sleep(10000);
 		driver.get("https://www.freecrm.com/");
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		log.info("entering application URL");
 		log.warn("Hey this just a warning message");
 		log.fatal("hey this is just fatal error message");
