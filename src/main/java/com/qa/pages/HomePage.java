@@ -35,10 +35,25 @@ public class HomePage {
 	}
 
 	@Test
+	public void abc() {
+		System.out.println("abc");
+	}
+	
+	@Test
 	public void compose() {
 		System.out.println("Home Compose");
 	}
 
+	@Test
+	public void apply() {
+		System.out.println("apply");
+	}
+	
+	@Test
+	public void delete() {
+		System.out.println("delete");
+	}
+	
 
 	@AfterSuite
 	public void shutdown() {
