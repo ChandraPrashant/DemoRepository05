@@ -44,7 +44,7 @@ public class HomePage {
 		System.out.println("Home Compose");
 	}
 
-	@Test
+	@Test(priority=-3,groups="Smoke")
 	public void apply() {
 		System.out.println("apply");
 	}

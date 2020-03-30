@@ -32,7 +32,7 @@ public class LoginPage {
 		System.out.println("Login");
 	}
 
-	@Test
+	@Test(groups="Smoke")
 	public void compose() {
 		System.out.println("Login Compose");
 	}
