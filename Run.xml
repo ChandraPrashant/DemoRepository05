@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Pages" verbose="1" parallel="classes" thread-count="2">
+<suite name="Pages" verbose="1" parallel="classes"
+	thread-count="2">
 
 	<test name="Page-Run.">
-		
+		<groups>
+			<run>
+				<include name="Smoke" />
+			</run>
+		</groups>
+
 		<classes>
-		   <class name="com.qa.pages.HomePage" />
-		   <class name="com.qa.pages.LoginPage" />
+			<class name="com.qa.pages.HomePage" />
+			<class name="com.qa.pages.LoginPage" />
 		</classes>
 	</test>
-
 </suite>
