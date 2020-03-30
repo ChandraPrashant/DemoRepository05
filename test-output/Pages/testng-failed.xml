@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Pages]" parallel="classes">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test name="Page-Run.(failed)" parallel="classes">
+    <classes>
+      <class name="com.qa.tests.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="freeCrmTitleTest"/>
+          <include name="freemCRMLogoTest"/>
+        </methods>
+      </class> <!-- com.qa.tests.LoginTest -->
+      <class name="com.qa.pages.LoginPage">
+        <methods>
+          <include name="logout"/>
+          <include name="CloseBrowser"/>
+          <include name="closeTab"/>
+          <include name="shutdown"/>
+          <include name="Login"/>
+          <include name="openSystem"/>
+          <include name="lunchBrowser"/>
+          <include name="EnterURL"/>
+        </methods>
+      </class> <!-- com.qa.pages.LoginPage -->
+      <class name="com.qa.pages.HomePage">
+        <methods>
+          <include name="EnterURL"/>
+          <include name="shutdown"/>
+          <include name="openSystem"/>
+          <include name="logout"/>
+          <include name="Login"/>
+          <include name="lunchBrowser"/>
+          <include name="closeTab"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.qa.pages.HomePage -->
+    </classes>
+  </test> <!-- Page-Run.(failed) -->
+</suite> <!-- Failed suite [Pages] -->
