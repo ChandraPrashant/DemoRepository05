@@ -143,3 +143,63 @@ INFO TestNG-test=Page-Run.-1 com.qa.tests.LoginTest - **************************
 INFO main com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
 INFO main com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
 INFO main com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
+INFO main com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
+INFO main com.qa.tests.LoginTest - launching chrome broswer
+INFO main com.qa.tests.LoginTest - entering application URL
+WARN main com.qa.tests.LoginTest - Hey this just a warning message
+FATAL main com.qa.tests.LoginTest - hey this is just fatal error message
+DEBUG main com.qa.tests.LoginTest - this is debug message
+INFO main com.qa.tests.LoginTest - ****************************** starting test case *****************************************
+INFO main com.qa.tests.LoginTest - ****************************** freeCrmTitleTest *****************************************
+INFO main com.qa.tests.LoginTest - login page title is--->Free CRM #1 cloud software for any business large or small
+INFO main com.qa.tests.LoginTest - ****************************** Browser is closed *****************************************
+INFO main com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
+INFO main com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
+INFO main com.qa.tests.LoginTest - launching chrome broswer
+INFO main com.qa.tests.LoginTest - entering application URL
+WARN main com.qa.tests.LoginTest - Hey this just a warning message
+FATAL main com.qa.tests.LoginTest - hey this is just fatal error message
+DEBUG main com.qa.tests.LoginTest - this is debug message
+INFO main com.qa.tests.LoginTest - ****************************** starting test case *****************************************
+INFO main com.qa.tests.LoginTest - ****************************** freemCRMLogoTest *****************************************
+INFO main com.qa.tests.LoginTest - ****************************** Browser is closed *****************************************
+INFO main com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
+INFO main com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
+INFO main com.qa.tests.LoginTest - launching chrome broswer
+INFO main com.qa.tests.LoginTest - entering application URL
+WARN main com.qa.tests.LoginTest - Hey this just a warning message
+FATAL main com.qa.tests.LoginTest - hey this is just fatal error message
+DEBUG main com.qa.tests.LoginTest - this is debug message
+INFO main com.qa.tests.LoginTest - ****************************** starting test case *****************************************
+INFO main com.qa.tests.LoginTest - ****************************** freeCrmTitleTest *****************************************
+INFO main com.qa.tests.LoginTest - login page title is--->Free CRM #1 cloud software for any business large or small
+INFO main com.qa.tests.LoginTest - ****************************** Browser is closed *****************************************
+INFO main com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
+INFO main com.qa.tests.LoginTest - launching chrome broswer
+INFO main com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
+INFO main com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
+INFO main com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
+INFO main com.qa.tests.LoginTest - launching Firefox broswer
+INFO main com.qa.tests.LoginTest - entering application URL
+WARN main com.qa.tests.LoginTest - Hey this just a warning message
+FATAL main com.qa.tests.LoginTest - hey this is just fatal error message
+DEBUG main com.qa.tests.LoginTest - this is debug message
+INFO main com.qa.tests.LoginTest - ****************************** starting test case *****************************************
+INFO main com.qa.tests.LoginTest - ****************************** freeCrmTitleTest *****************************************
+INFO main com.qa.tests.LoginTest - login page title is--->Free CRM #1 cloud software for any business large or small
+INFO main com.qa.tests.LoginTest - ****************************** Browser is closed *****************************************
+INFO main com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
+INFO main com.qa.tests.LoginTest - launching Firefox broswer
+INFO main com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
+INFO main com.qa.tests.LoginTest - launching Firefox broswer
+INFO TestNG-test=Page-Run.-1 com.qa.tests.LoginTest - ****************************** Starting test cases execution  *****************************************
+DEBUG main freemarker.cache - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+DEBUG main freemarker.cache - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/WINDOWS/system32/config/systemprofile/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+DEBUG main freemarker.cache - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+DEBUG main freemarker.cache - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+DEBUG main freemarker.cache - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/WINDOWS/system32/config/systemprofile/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
