@@ -21,7 +21,7 @@ public class LoginTest {
 	public void setup() throws InterruptedException{
 		log.info("****************************** Starting test cases execution  *****************************************");
 
-		System.setProperty("webdriver.chrome.driver", "D:\\my-workspace\\DemoRepository05\\Driver\\chromedriver.exe");	
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Driver/chromedriver.exe");	
 		driver = new ChromeDriver(); 
 		log.info("launching chrome broswer");
 		driver.manage().window().maximize();
