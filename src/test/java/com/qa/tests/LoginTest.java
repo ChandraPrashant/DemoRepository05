@@ -1,11 +1,11 @@
 package com.qa.tests;
 
 import java.util.concurrent.TimeUnit;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.apache.log4j.Logger;
+import org.testng.annotations.Test;
 
 
 public class LoginTest {
@@ -14,7 +14,7 @@ public class LoginTest {
 	Logger log = Logger.getLogger(LoginTest.class);
 	
 	
-	@BeforeMethod
+	@Test
 	public void setup() throws InterruptedException{
 		log.info("****************************** Starting test cases execution  *****************************************");
 
