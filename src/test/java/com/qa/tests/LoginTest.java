@@ -21,16 +21,16 @@ public class LoginTest {
 	public void setup() throws InterruptedException{
 		log.info("****************************** Starting test cases execution  *****************************************");
 
-		System.setProperty("webdriver.chrome.driver", "D:\\my-workspace\\subbranch\\DemoRepository05\\Driver\\chromedriver.exe");	
+		System.setProperty("webdriver.chrome.driver", "D:\\my-workspace\\DemoRepository05\\Driver\\chromedriver.exe");	
 		driver = new ChromeDriver(); 
 		log.info("launching chrome broswer");
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 		driver.get("https://www.freecrm.com/");
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 		log.info("entering application URL");
 		log.warn("Hey this just a warning message");
 		log.fatal("hey this is just fatal error message");
