@@ -13,7 +13,6 @@ public class LoginTest {
 	WebDriver driver;
 	Logger log = Logger.getLogger(LoginTest.class);
 	
-	
 	@Test
 	public void setup() throws InterruptedException{
 		log.info("****************************** Starting test cases execution  *****************************************");
@@ -25,7 +24,6 @@ public class LoginTest {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Thread.sleep(2000);
 		driver.get("https://www.freecrm.com/");
 		Thread.sleep(2000);
 		log.info("entering application URL");

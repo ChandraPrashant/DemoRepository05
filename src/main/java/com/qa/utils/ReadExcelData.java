@@ -1,7 +1,6 @@
 package com.qa.utils;
 
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.util.Properties;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -10,16 +9,23 @@ import org.testng.annotations.Test;
 
 public class ReadExcelData extends ReadPropertyFile {
 
+	public static String propath = "/src/main/resources/Global.properties";
 	static FileInputStream fis = null;
 	static XSSFWorkbook wb = null;
 	static XSSFSheet sheet = null;
 	static XSSFRow currentRow = null;
+	protected static Properties prop = null;
 
+	public ReadExcelData() throws Exception {
+		
+		prop = readPropertiesFile(System.getProperty("user.dir") + propath);
+
+	}
+	
 	@Test
-	public static void readExcelSheet() throws IOException {
+	public static void readExcelSheet() throws Exception {
 
-		Properties prop = readPropertiesFile(
-				System.getProperty("user.dir") + "/src/main/resources/Global.properties");
+		Properties prop = readPropertiesFile(System.getProperty("user.dir") + propath);
 
 		fis = new FileInputStream(System.getProperty("user.dir") + prop.getProperty("filepath"));
 
@@ -29,7 +35,7 @@ public class ReadExcelData extends ReadPropertyFile {
 
 		int rowCount = sheet.getLastRowNum();
 
-		int colCount = sheet.getRow(1).getLastCellNum();
+		int colCount = sheet.getRow(0).getLastCellNum();
 
 		for (int i = 0; i < rowCount; i++) {
 
@@ -38,11 +44,12 @@ public class ReadExcelData extends ReadPropertyFile {
 			for (int j = 0; j < colCount; j++) {
 
 				String value = currentRow.getCell(j).toString();
-				System.out.print(value + " || ");
+				System.out.print(" "+value + " ");
+				
 			}
 			System.out.println("");
 		}
 
-	}
+ }
 
 }
