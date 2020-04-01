@@ -1,143 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Pages" duration-ms="19636" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:23:01Z">
+  <suite name="Default suite" duration-ms="363" started-at="2020-04-01T04:12:06Z" finished-at="2020-04-01T04:12:07Z">
     <groups>
-      <group name="Smoke">
-        <method signature="HomePage.apply()[pri:-3, instance:com.qa.pages.HomePage@20398b7c]" name="apply" class="com.qa.pages.HomePage"/>
-        <method signature="LoginPage.compose()[pri:0, instance:com.qa.pages.LoginPage@6fc6f14e]" name="compose" class="com.qa.pages.LoginPage"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test name="Page-Run." duration-ms="19636" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:23:01Z">
-      <class name="com.qa.pages.HomePage">
-        <test-method status="PASS" signature="openSystem()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="openSystem" is-config="true" duration-ms="7" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
+    <test name="Default test" duration-ms="363" started-at="2020-04-01T04:12:06Z" finished-at="2020-04-01T04:12:07Z">
+      <class name="com.qa.utils.ReadExcelData">
+        <test-method status="FAIL" signature="readExcelSheet()[pri:0, instance:com.qa.utils.ReadExcelData@48524010]" name="readExcelSheet" duration-ms="344" started-at="2020-04-01T04:12:06Z" finished-at="2020-04-01T04:12:07Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qa.utils.ReadExcelData.readExcelSheet(ReadExcelData.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openSystem -->
-        <test-method status="PASS" signature="openSystem()[pri:0, instance:com.qa.pages.LoginPage@6fc6f14e]" name="openSystem" is-config="true" duration-ms="0" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSystem -->
-        <test-method status="PASS" signature="lunchBrowser()[pri:0, instance:com.qa.pages.LoginPage@6fc6f14e]" name="lunchBrowser" is-config="true" duration-ms="1" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lunchBrowser -->
-        <test-method status="PASS" signature="lunchBrowser()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="lunchBrowser" is-config="true" duration-ms="0" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lunchBrowser -->
-        <test-method status="PASS" signature="EnterURL()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="EnterURL" is-config="true" duration-ms="0" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnterURL -->
-        <test-method status="PASS" signature="apply()[pri:-3, instance:com.qa.pages.HomePage@20398b7c]" name="apply" duration-ms="3" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- apply -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="Login" is-config="true" duration-ms="0" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="logout" is-config="true" duration-ms="1" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="delete()[pri:-1, instance:com.qa.pages.HomePage@20398b7c]" name="delete" duration-ms="1" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delete -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="Login" is-config="true" duration-ms="0" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="logout" is-config="true" duration-ms="0" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="abc()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="abc" duration-ms="1" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- abc -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="Login" is-config="true" duration-ms="0" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="logout" is-config="true" duration-ms="1" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="compose()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="compose" duration-ms="1" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- compose -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="Login" is-config="true" duration-ms="0" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="logout" is-config="true" duration-ms="1" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="closeTab()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="closeTab" is-config="true" duration-ms="0" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTab -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="CloseBrowser" is-config="true" duration-ms="1" started-at="2020-03-31T12:23:01Z" finished-at="2020-03-31T12:23:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.qa.pages.LoginPage@6fc6f14e]" name="CloseBrowser" is-config="true" duration-ms="0" started-at="2020-03-31T12:23:01Z" finished-at="2020-03-31T12:23:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-        <test-method status="PASS" signature="shutdown()[pri:0, instance:com.qa.pages.HomePage@20398b7c]" name="shutdown" is-config="true" duration-ms="1" started-at="2020-03-31T12:23:01Z" finished-at="2020-03-31T12:23:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shutdown -->
-        <test-method status="PASS" signature="shutdown()[pri:0, instance:com.qa.pages.LoginPage@6fc6f14e]" name="shutdown" is-config="true" duration-ms="0" started-at="2020-03-31T12:23:01Z" finished-at="2020-03-31T12:23:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shutdown -->
-      </class> <!-- com.qa.pages.HomePage -->
-      <class name="com.qa.tests.HomePageTest">
-        <test-method status="PASS" signature="test()[pri:0, instance:com.qa.tests.HomePageTest@56235b8e]" name="test" duration-ms="1" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.qa.tests.HomePageTest -->
-      <class name="com.qa.tests.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.LoginTest@3632be31]" name="setup" duration-ms="18975" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:23:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.LoginTest@3632be31]" name="tearDown" is-config="true" duration-ms="621" started-at="2020-03-31T12:23:01Z" finished-at="2020-03-31T12:23:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.tests.LoginTest -->
-      <class name="com.qa.pages.LoginPage">
-        <test-method status="PASS" signature="EnterURL()[pri:0, instance:com.qa.pages.LoginPage@6fc6f14e]" name="EnterURL" is-config="true" duration-ms="0" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnterURL -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.qa.pages.LoginPage@6fc6f14e]" name="Login" is-config="true" duration-ms="1" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="compose()[pri:0, instance:com.qa.pages.LoginPage@6fc6f14e]" name="compose" duration-ms="1" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- compose -->
-        <test-method status="PASS" signature="closeTab()[pri:0, instance:com.qa.pages.LoginPage@6fc6f14e]" name="closeTab" is-config="true" duration-ms="1" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTab -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.qa.pages.LoginPage@6fc6f14e]" name="logout" is-config="true" duration-ms="0" started-at="2020-03-31T12:22:42Z" finished-at="2020-03-31T12:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- com.qa.pages.LoginPage -->
-    </test> <!-- Page-Run. -->
-  </suite> <!-- Pages -->
+        </test-method> <!-- readExcelSheet -->
+      </class> <!-- com.qa.utils.ReadExcelData -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
