@@ -1,8 +1,8 @@
 package com.qa.tests;
 
 import java.io.FileInputStream;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -10,28 +10,26 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import com.qa.utils.ReadPropertyFile;
 
-import com.qa.utils.ReadExcelData;
+public class UglyContactUsPageTest extends ReadPropertyFile {
 
-public class UglyContactUsPageTest extends ReadExcelData {
 
 	static FileInputStream fis = null;
 	static XSSFWorkbook wb = null;
 	static XSSFSheet sheet = null;
 	static XSSFRow currentRow = null;
-
-	public UglyContactUsPageTest() throws Exception {
-		super();
-	}
-
 	static WebDriver driver;
+	static Properties prop = null;
 
 	@Test
 	public static void submitForm() throws Exception {
+		
+		prop = ReadPropertyFile.readPropertiesFile(System.getProperty("user.dir") +"/src/main/resources/Global.properties");
 
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Driver/chromedriver.exe");
 
-		fis = new FileInputStream(System.getProperty("user.dir") + prop.getProperty("filepath"));
+		fis = new FileInputStream(System.getProperty("user.dir") + "/src/main/resources/ContactUsData.xlsx");
 
 		wb = new XSSFWorkbook(fis);
 

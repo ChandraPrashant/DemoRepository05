@@ -16,7 +16,7 @@
 			<class name="com.qa.pages.HomePage" />
 			<class name="com.qa.pages.LoginPage" />
 			<class name="com.qa.tests.HomePageTest" />
-			<class name="com.qa.tests.LoginTest" />
+			<class name="com.qa.tests.UglyContactUsPageTest" />
 		</classes>
 	</test>
 </suite>
