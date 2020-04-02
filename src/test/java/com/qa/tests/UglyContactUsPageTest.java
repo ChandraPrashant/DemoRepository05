@@ -1,11 +1,7 @@
 package com.qa.tests;
 
-import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
