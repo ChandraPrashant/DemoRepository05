@@ -14,20 +14,19 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 
 	static WebDriver driver;
 	static Properties prop = null;
+	static String proppath = "/src/main/resources/Global.properties";
 
 	@Test
-	public static void submitForm() throws Exception {
+	public void submitForm() throws Exception {
 
-		prop = ReadPropertyFile
-				.readPropertiesFile(System.getProperty("user.dir") + "/src/main/resources/Global.properties");
+		prop = ReadPropertyFile.readPropertiesFile(System.getProperty("user.dir") + proppath);
 
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Driver/chromedriver.exe");
 
-		ReadExcelData reader = new ReadExcelData(
-				System.getProperty("user.dir") + "/src/main/resources/ContactUsData.xlsx");
+		ReadExcelData reader = new ReadExcelData(System.getProperty("user.dir") + prop.getProperty("filepath"));
 
-		int rowCount = reader.getRowCount("ContactUs");
-
+		int rowCount = reader.getRowCount(prop.getProperty("sheetname"));
+			
 		for (int rowNum = 2; rowNum <= rowCount; rowNum++) {
 
 			// WebDriver Code
@@ -54,7 +53,7 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 			driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.companyname"))).sendKeys(companyname);
 			driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.email"))).sendKeys(email);
 			driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.phonenumber"))).sendKeys(phonenumber);
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.submitbutton"))).click();
 
 			if (driver.getPageSource().contains("Thanks for your request. We'll be in touch soon")) {
@@ -62,6 +61,7 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 			} else {
 				System.out.println("ContactUs From Not Submitted for " + rowNum);
 			}
+			Thread.sleep(3000);
 			driver.quit();
 		}
 	}
