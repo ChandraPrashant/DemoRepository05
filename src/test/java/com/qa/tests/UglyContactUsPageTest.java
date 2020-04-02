@@ -28,7 +28,7 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 
 		int rowCount = reader.getRowCount("ContactUs");
 
-		for (int i = 1; i < rowCount; i++) {
+		for (int rowNum = 2; rowNum <= rowCount; rowNum++) {
 
 			// WebDriver Code
 			driver = new ChromeDriver();
@@ -40,12 +40,12 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 			driver.navigate().refresh();
 
 			// Parameterization
-			String firstname = reader.getCellData("ContactUs", "FirstName", rowCount);
-			String lastname = reader.getCellData("ContactUs", "LastName", rowCount);
-			String jobtitle = reader.getCellData("ContactUs", "JobTitle", rowCount);
-			String companyname = reader.getCellData("ContactUs", "CompanyName", rowCount);
-			String email = reader.getCellData("ContactUs", "Email", rowCount);
-			String phonenumber = reader.getCellData("ContactUs", "PhoneNumber", rowCount);
+			String firstname = reader.getCellData("ContactUs", "FirstName", rowNum);
+			String lastname = reader.getCellData("ContactUs", "LastName", rowNum);
+			String jobtitle = reader.getCellData("ContactUs", "JobTitle", rowNum);
+			String companyname = reader.getCellData("ContactUs", "CompanyName", rowNum);
+			String email = reader.getCellData("ContactUs", "Email", rowNum);
+			String phonenumber = reader.getCellData("ContactUs", "PhoneNumber", rowNum);
 
 			// WebElements Code
 			driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.firstname"))).sendKeys(firstname);
@@ -58,12 +58,11 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 			driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.submitbutton"))).click();
 
 			if (driver.getPageSource().contains("Thanks for your request. We'll be in touch soon")) {
-				System.out.println("ContactUs From Submitted for " + rowCount);
+				System.out.println("ContactUs From Submitted for " + rowNum);
 			} else {
-				System.out.println("ContactUs From Not Submitted for " + rowCount);
+				System.out.println("ContactUs From Not Submitted for " + rowNum);
 			}
 			driver.quit();
-			break;
 		}
 	}
 }
