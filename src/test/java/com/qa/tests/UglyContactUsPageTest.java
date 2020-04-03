@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
-
 import com.qa.utils.ReadExcelData;
 import com.qa.utils.ReadPropertyFile;
 
@@ -19,14 +18,14 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 	@Test
 	public void submitForm() throws Exception {
 
-		prop = ReadPropertyFile.readPropertiesFile(System.getProperty("user.dir") + proppath);
+		prop = ReadPropertyFile.readPropertiesFile(System.getProperty("user.dir") + proppath );
 
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Driver/chromedriver.exe");
 
 		ReadExcelData reader = new ReadExcelData(System.getProperty("user.dir") + prop.getProperty("filepath"));
 
 		int rowCount = reader.getRowCount(prop.getProperty("sheetname"));
-			
+
 		for (int rowNum = 2; rowNum <= rowCount; rowNum++) {
 
 			// WebDriver Code
