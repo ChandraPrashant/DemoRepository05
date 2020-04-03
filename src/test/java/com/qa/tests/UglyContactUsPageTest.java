@@ -32,7 +32,7 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.get(prop.getProperty("uglys.contactus.url"));
 			driver.navigate().refresh();
@@ -55,13 +55,15 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 			Thread.sleep(2000);
 			driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.submitbutton"))).click();
 
-			//Verification Code
-			if (driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.firstname"))).isDisplayed()) {
+			// Verification Code
+			String status = driver.findElement(By.xpath("//p[contains(text(),'Thanks for your request.')]")).getText();
+			if (status.contains("Thanks for your request. We'll be in touch soon.")) {
 				System.out.println("ContactUs From Submitted for " + rowNum);
 			} else {
 				System.out.println("ContactUs From Not Submitted for " + rowNum);
 			}
-			Thread.sleep(3000);
+
+			Thread.sleep(2000);
 			driver.quit();
 		}
 	}
