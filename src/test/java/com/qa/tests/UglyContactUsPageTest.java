@@ -9,6 +9,8 @@ import org.testng.annotations.Test;
 import com.qa.utils.ReadExcelData;
 import com.qa.utils.ReadPropertyFile;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class UglyContactUsPageTest extends ReadPropertyFile {
 
 	static WebDriver driver;
@@ -20,8 +22,9 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 
 		prop = ReadPropertyFile.readPropertiesFile(System.getProperty("user.dir") + proppath);
 
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + prop.getProperty("driverpath"));
-
+		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + prop.getProperty("driverpath"));
+		WebDriverManager.chromedriver().setup();
+		
 		ReadExcelData reader = new ReadExcelData(System.getProperty("user.dir") + prop.getProperty("filepath"));
 
 		int rowCount = reader.getRowCount(prop.getProperty("sheetname"));
