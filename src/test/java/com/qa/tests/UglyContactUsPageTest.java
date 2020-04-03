@@ -18,9 +18,9 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 	@Test
 	public void submitForm() throws Exception {
 
-		prop = ReadPropertyFile.readPropertiesFile(System.getProperty("user.dir") + proppath );
+		prop = ReadPropertyFile.readPropertiesFile(System.getProperty("user.dir") + proppath);
 
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + prop.getProperty("driverpath"));
 
 		ReadExcelData reader = new ReadExcelData(System.getProperty("user.dir") + prop.getProperty("filepath"));
 
@@ -55,7 +55,8 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 			Thread.sleep(2000);
 			driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.submitbutton"))).click();
 
-			if (driver.getPageSource().contains("Thanks for your request. We'll be in touch soon")) {
+			//Verification Code
+			if (driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.firstname"))).isDisplayed()) {
 				System.out.println("ContactUs From Submitted for " + rowNum);
 			} else {
 				System.out.println("ContactUs From Not Submitted for " + rowNum);
