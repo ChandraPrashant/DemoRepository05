@@ -20,14 +20,14 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 	@Test
 	public void submitForm() throws Exception {
 
-		prop = ReadPropertyFile.readPropertiesFile(System.getProperty("user.dir") + proppath);
+		prop = ReadPropertyFile.readPropertiesFile(System.getProperty("user.dir") + proppath );
 
 		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + prop.getProperty("driverpath"));
 		WebDriverManager.chromedriver().setup();
 		
 		ReadExcelData reader = new ReadExcelData(System.getProperty("user.dir") + prop.getProperty("filepath"));
 
-		int rowCount = reader.getRowCount(prop.getProperty("sheetname"));
+		int rowCount = reader.getRowCount(prop.getProperty("uglysheetname"));
 
 		for (int rowNum = 2; rowNum <= rowCount; rowNum++) {
 
@@ -41,12 +41,12 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 			driver.navigate().refresh();
 
 			// Parameterization
-			String firstname = reader.getCellData("ContactUs", "FirstName", rowNum);
-			String lastname = reader.getCellData("ContactUs", "LastName", rowNum);
-			String jobtitle = reader.getCellData("ContactUs", "JobTitle", rowNum);
-			String companyname = reader.getCellData("ContactUs", "CompanyName", rowNum);
-			String email = reader.getCellData("ContactUs", "Email", rowNum);
-			String phonenumber = reader.getCellData("ContactUs", "PhoneNumber", rowNum);
+			String firstname = reader.getCellData(prop.getProperty("uglysheetname"), "FirstName", rowNum);
+			String lastname = reader.getCellData(prop.getProperty("uglysheetname"), "LastName", rowNum);
+			String jobtitle = reader.getCellData(prop.getProperty("uglysheetname"), "JobTitle", rowNum);
+			String companyname = reader.getCellData(prop.getProperty("uglysheetname"), "CompanyName", rowNum);
+			String email = reader.getCellData(prop.getProperty("uglysheetname"), "Email", rowNum);
+			String phonenumber = reader.getCellData(prop.getProperty("uglysheetname"), "PhoneNumber", rowNum);
 
 			// WebElements Code
 			driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.firstname"))).sendKeys(firstname);
@@ -55,7 +55,7 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 			driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.companyname"))).sendKeys(companyname);
 			driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.email"))).sendKeys(email);
 			driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.phonenumber"))).sendKeys(phonenumber);
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.submitbutton"))).click();
 
 			// Verification Code
@@ -66,7 +66,7 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 				System.out.println("ContactUs From Not Submitted for " + rowNum);
 			}
 
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			driver.quit();
 		}
 	}

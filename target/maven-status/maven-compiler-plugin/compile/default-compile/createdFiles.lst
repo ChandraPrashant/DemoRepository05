@@ -1,5 +1,0 @@
-com\qa\pages\LoginPage.class
-com\qa\ExtentReportListener\ExtentReportListener.class
-com\qa\pages\HomePage.class
-com\qa\utils\ReadExcelData.class
-com\qa\utils\ReadPropertyFile.class
