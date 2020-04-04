@@ -42,7 +42,9 @@ public class FreeCRMAccountPageTest extends ReadPropertyFile {
 			String password = reader.getCellData(prop.getProperty("freecrmsheetname"), "PassWord", rowNum);
 
 			// WebElements Code
+			Thread.sleep(2000);
 			driver.findElement(By.cssSelector(prop.getProperty("freecrm.myaccount.username"))).sendKeys(username);
+			Thread.sleep(2000);
 			driver.findElement(By.cssSelector(prop.getProperty("freecrm.myaccount.password"))).sendKeys(password);
 			Thread.sleep(1000);
 			driver.findElement(By.cssSelector(prop.getProperty("freecrm.myaccount.login"))).click();
