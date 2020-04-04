@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [Pages]" parallel="classes">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Pages]" parallel="classes">
   <listeners>
     <listener class-name="com.qa.ExtentReportListener.ExtentReportListener"/>
   </listeners>
   <test thread-count="1" name="Page-Run.(failed)" parallel="classes">
     <classes>
-      <class name="com.qa.tests.LoginTest">
+      <class name="com.qa.tests.JBLMyAccountPageTest">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="freeCrmTitleTest"/>
-          <include name="freemCRMLogoTest"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.qa.tests.LoginTest -->
+      </class> <!-- com.qa.tests.JBLMyAccountPageTest -->
     </classes>
   </test> <!-- Page-Run.(failed) -->
 </suite> <!-- Failed suite [Pages] -->

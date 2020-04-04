@@ -35,8 +35,8 @@ public class JBLMyAccountPageTest extends ReadPropertyFile {
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
 			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.get(prop.getProperty("jbl.myaccount.url"));
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 			// Parameterization
 			String username = reader.getCellData(prop.getProperty("jblsheetname"), "UserName", rowNum);

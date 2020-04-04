@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="74516" started-at="2020-04-03T17:07:15Z" finished-at="2020-04-03T17:08:29Z">
+  <suite name="Pages" duration-ms="73577" started-at="2020-04-04T05:53:45Z" finished-at="2020-04-04T05:54:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="74516" started-at="2020-04-03T17:07:15Z" finished-at="2020-04-03T17:08:29Z">
+    <test name="Page-Run." duration-ms="73577" started-at="2020-04-04T05:53:45Z" finished-at="2020-04-04T05:54:59Z">
       <class name="com.qa.tests.JBLMyAccountPageTest">
-        <test-method status="PASS" signature="login()[pri:0, instance:com.qa.tests.JBLMyAccountPageTest@13acb0d1]" name="login" duration-ms="74494" started-at="2020-04-03T17:07:15Z" finished-at="2020-04-03T17:08:29Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.qa.tests.JBLMyAccountPageTest@4883b407]" name="login" duration-ms="73551" started-at="2020-04-04T05:53:45Z" finished-at="2020-04-04T05:54:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
       </class> <!-- com.qa.tests.JBLMyAccountPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Page-Run. -->
+  </suite> <!-- Pages -->
 </testng-results>
