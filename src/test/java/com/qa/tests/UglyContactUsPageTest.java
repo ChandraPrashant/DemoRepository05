@@ -17,7 +17,7 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 	static Properties prop = null;
 	static String proppath = "/src/main/resources/Global.properties";
 
-	@Test
+	@Test(groups="Smoke")
 	public void submitForm() throws Exception {
 
 		prop = ReadPropertyFile.readPropertiesFile(System.getProperty("user.dir") + proppath );
