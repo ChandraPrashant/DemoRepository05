@@ -34,7 +34,7 @@ public class FreeCRMAccountPageTest extends ReadPropertyFile {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 			driver.get(prop.getProperty("freecrm.myaccount.url"));
 
 			// Parameterization
