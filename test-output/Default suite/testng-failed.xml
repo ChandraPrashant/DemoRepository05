@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.tests.UglyContactUsPageTest">
+      <class name="com.qa.tests.FreeCRMAccountPageTest">
         <methods>
-          <include name="submitForm"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.qa.tests.UglyContactUsPageTest -->
+      </class> <!-- com.qa.tests.FreeCRMAccountPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

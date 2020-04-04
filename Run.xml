@@ -15,8 +15,8 @@
 		<classes>
 			<class name="com.qa.pages.HomePage" />
 			<class name="com.qa.pages.LoginPage" />
-			<class name="com.qa.tests.UglyContactUsPageTest" />
-			<class name="com.qa.tests.JBLMyAccountPageTest" />
+			<!-- <class name="com.qa.tests.UglyContactUsPageTest" /> -->
+			<class name="com.qa.tests.FreeCRMAccountPageTest" />
 		</classes>
 	</test>
 </suite>

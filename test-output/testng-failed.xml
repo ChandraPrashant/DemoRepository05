@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Pages]" parallel="classes">
-  <listeners>
-    <listener class-name="com.qa.ExtentReportListener.ExtentReportListener"/>
-  </listeners>
-  <test thread-count="1" name="Page-Run.(failed)" parallel="classes">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.tests.JBLMyAccountPageTest">
+      <class name="com.qa.tests.FreeCRMAccountPageTest">
         <methods>
           <include name="login"/>
         </methods>
-      </class> <!-- com.qa.tests.JBLMyAccountPageTest -->
+      </class> <!-- com.qa.tests.FreeCRMAccountPageTest -->
     </classes>
-  </test> <!-- Page-Run.(failed) -->
-</suite> <!-- Failed suite [Pages] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
