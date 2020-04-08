@@ -5,11 +5,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.testng.annotations.Test;
 import com.qa.utils.ReadExcelData;
 import com.qa.utils.ReadPropertyFile;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class UglyContactUsPageTest extends ReadPropertyFile {
 
@@ -17,14 +16,13 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 	static Properties prop = null;
 	static String proppath = "/src/main/resources/Global.properties";
 
-	@Test(groups="Smoke")
+	@Test(groups = "Smoke")
 	public void submitForm() throws Exception {
-
-		prop = ReadPropertyFile.readPropertiesFile(System.getProperty("user.dir") + proppath );
+		prop = ReadPropertyFile.readPropertiesFile(System.getProperty("user.dir") + proppath);
 
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + prop.getProperty("driverpath"));
-		//WebDriverManager.chromedriver().setup();
-		
+		// WebDriverManager.chromedriver().setup();
+
 		ReadExcelData reader = new ReadExcelData(System.getProperty("user.dir") + prop.getProperty("filepath"));
 
 		int rowCount = reader.getRowCount(prop.getProperty("uglysheetname"));
@@ -58,7 +56,7 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 			Thread.sleep(1000);
 			driver.findElement(By.cssSelector(prop.getProperty("uglys.contactus.submitbutton"))).click();
 			Thread.sleep(2000);
-			
+
 			// Verification Code
 			String status = driver.findElement(By.xpath("//p[contains(text(),'Thanks for your request.')]")).getText();
 			if (status.contains("Thanks for your request. We'll be in touch soon.")) {
@@ -70,5 +68,6 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 			Thread.sleep(1000);
 			driver.quit();
 		}
+
 	}
 }

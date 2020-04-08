@@ -40,7 +40,10 @@ public class FreeCRMAccountPageTest extends ReadPropertyFile {
 
 	@DataProvider
 	public Iterator<Object[]> getTestData() throws Exception {
-		ArrayList<Object[]> testData = TestUtil.getDataFromExcel();
+
+		prop = ReadPropertyFile.readPropertiesFile(System.getProperty("user.dir") + proppath);
+
+		ArrayList<Object[]> testData = TestUtil.getDataFromExcel(prop.getProperty("freecrmsheetname"));
 		return testData.iterator();
 	}
 
@@ -59,11 +62,11 @@ public class FreeCRMAccountPageTest extends ReadPropertyFile {
 		try {
 			String status = driver.findElement(By.xpath("//span[contains(text(),'Prashant Chandra')]")).getText();
 			if (status.contains("Prashant")) {
-				System.out.println("Login happened successfully for " + username + "|" + password);
+				System.out.println("Login happened successfully for " + username + " | " + password);
 			}
 		} catch (Exception e) {
 			e.getMessage();
-			System.out.println("Login not happened for " + username + "|" + password);
+			System.out.println("Login not happened for " + username + " | " + password);
 		}
 
 	}
