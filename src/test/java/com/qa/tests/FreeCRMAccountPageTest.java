@@ -1,13 +1,18 @@
 package com.qa.tests;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import com.qa.utils.ReadExcelData;
 import com.qa.utils.ReadPropertyFile;
+import com.test.utility.TestUtil;
 
 public class FreeCRMAccountPageTest extends ReadPropertyFile {
 
@@ -15,56 +20,56 @@ public class FreeCRMAccountPageTest extends ReadPropertyFile {
 	static Properties prop = null;
 	static String proppath = "/src/main/resources/Global.properties";
 
-	@Test(groups = "Smoke")
-	public void login() throws Exception {
+	@BeforeMethod
+	public void setup() throws Exception {
 
+		// Property Path Code
 		prop = ReadPropertyFile.readPropertiesFile(System.getProperty("user.dir") + proppath);
 
+		// WebDriver Code
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + prop.getProperty("driverpath"));
 
-		ReadExcelData reader = new ReadExcelData(System.getProperty("user.dir") + prop.getProperty("filepath"));
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.get(prop.getProperty("freecrm.myaccount.url"));
 
-		int rowCount = reader.getRowCount(prop.getProperty("freecrmsheetname"));
+	}
 
-		reader.addColumn(prop.getProperty("freecrmsheetname"), "Status");
+	@DataProvider
+	public Iterator<Object[]> getTestData() throws Exception {
+		ArrayList<Object[]> testData = TestUtil.getDataFromExcel();
+		return testData.iterator();
+	}
 
-		for (int rowNum = 2; rowNum <= rowCount; rowNum++) {
+	@Test(dataProvider = "getTestData", groups = "Smoke")
+	public void login(String username, String password) throws Exception {
 
-			// WebDriver Code
-			driver = new ChromeDriver();
-			driver.manage().window().maximize();
-			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-			driver.get(prop.getProperty("freecrm.myaccount.url"));
+		// WebElements Code
+		driver.findElement(By.cssSelector(prop.getProperty("freecrm.myaccount.username"))).sendKeys(username);
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector(prop.getProperty("freecrm.myaccount.password"))).sendKeys(password);
+		Thread.sleep(1000);
+		driver.findElement(By.cssSelector(prop.getProperty("freecrm.myaccount.login"))).click();
+		Thread.sleep(2000);
 
-			// Parameterization
-			String username = reader.getCellData(prop.getProperty("freecrmsheetname"), "UserName", rowNum);
-			String password = reader.getCellData(prop.getProperty("freecrmsheetname"), "PassWord", rowNum);
-
-			// WebElements Code
-			Thread.sleep(2000);
-			driver.findElement(By.cssSelector(prop.getProperty("freecrm.myaccount.username"))).sendKeys(username);
-			Thread.sleep(2000);
-			driver.findElement(By.cssSelector(prop.getProperty("freecrm.myaccount.password"))).sendKeys(password);
-			Thread.sleep(1000);
-			driver.findElement(By.cssSelector(prop.getProperty("freecrm.myaccount.login"))).click();
-			Thread.sleep(2000);
-
-			// Verification Code
-			try {
-				String status = driver.findElement(By.xpath("//span[contains(text(),'Prashant Chandra')]")).getText();
-				if (status.contains("Prashant")) {
-					System.out.println("Login happened successfully for " + rowNum);
-					reader.setCellData(prop.getProperty("freecrmsheetname"), "Status", rowNum, "Pass");
-				}
-			} catch (Exception e) {
-				e.getMessage();
-				System.out.println("Login not happened for " + rowNum);
-				reader.setCellData(prop.getProperty("freecrmsheetname"), "Status", rowNum, "Fail");
+		// Verification Code
+		try {
+			String status = driver.findElement(By.xpath("//span[contains(text(),'Prashant Chandra')]")).getText();
+			if (status.contains("Prashant")) {
+				System.out.println("Login happened successfully for " + username + "|" + password);
 			}
-
-			Thread.sleep(1000);
-			driver.quit();
+		} catch (Exception e) {
+			e.getMessage();
+			System.out.println("Login not happened for " + username + "|" + password);
 		}
+
+	}
+
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
 	}
 }

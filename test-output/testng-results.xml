@@ -1,34 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="6" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Pages" duration-ms="71092" started-at="2020-04-05T17:40:38Z" finished-at="2020-04-05T17:41:49Z">
+  <suite name="Default suite" duration-ms="108485" started-at="2020-04-08T06:56:38Z" finished-at="2020-04-08T06:58:27Z">
     <groups>
       <group name="Smoke">
-        <method signature="FreeCRMAccountPageTest.login()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@57fffcd7]" name="login" class="com.qa.tests.FreeCRMAccountPageTest"/>
-        <method signature="HomePage.apply()[pri:-3, instance:com.qa.pages.HomePage@239963d8]" name="apply" class="com.qa.pages.HomePage"/>
-        <method signature="LoginPage.compose()[pri:0, instance:com.qa.pages.LoginPage@3abbfa04]" name="compose" class="com.qa.pages.LoginPage"/>
+        <method signature="FreeCRMAccountPageTest.login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="login" class="com.qa.tests.FreeCRMAccountPageTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="Page-Run." duration-ms="71092" started-at="2020-04-05T17:40:38Z" finished-at="2020-04-05T17:41:49Z">
+    <test name="Default test" duration-ms="108485" started-at="2020-04-08T06:56:38Z" finished-at="2020-04-08T06:58:27Z">
       <class name="com.qa.tests.FreeCRMAccountPageTest">
-        <test-method status="PASS" signature="login()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@57fffcd7]" name="login" duration-ms="71052" started-at="2020-04-05T17:40:38Z" finished-at="2020-04-05T17:41:49Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="setup" is-config="true" duration-ms="16543" started-at="2020-04-08T06:56:39Z" finished-at="2020-04-08T06:56:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="login" duration-ms="25928" started-at="2020-04-08T06:56:55Z" data-provider="getTestData" finished-at="2020-04-08T06:57:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prashantchandra14@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chandra]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="tearDown" is-config="true" duration-ms="711" started-at="2020-04-08T06:57:21Z" finished-at="2020-04-08T06:57:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="setup" is-config="true" duration-ms="14914" started-at="2020-04-08T06:57:22Z" finished-at="2020-04-08T06:57:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="login" duration-ms="5591" started-at="2020-04-08T06:57:37Z" data-provider="getTestData" finished-at="2020-04-08T06:57:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prashantchandra14@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Prashu55]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="tearDown" is-config="true" duration-ms="744" started-at="2020-04-08T06:57:43Z" finished-at="2020-04-08T06:57:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="setup" is-config="true" duration-ms="16808" started-at="2020-04-08T06:57:43Z" finished-at="2020-04-08T06:58:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="login" duration-ms="25713" started-at="2020-04-08T06:58:00Z" data-provider="getTestData" finished-at="2020-04-08T06:58:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prashantchandra14@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kumar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="tearDown" is-config="true" duration-ms="748" started-at="2020-04-08T06:58:26Z" finished-at="2020-04-08T06:58:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tests.FreeCRMAccountPageTest -->
-      <class name="com.qa.pages.HomePage">
-        <test-method status="PASS" signature="apply()[pri:-3, instance:com.qa.pages.HomePage@239963d8]" name="apply" duration-ms="11" started-at="2020-04-05T17:40:38Z" finished-at="2020-04-05T17:40:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- apply -->
-      </class> <!-- com.qa.pages.HomePage -->
-      <class name="com.qa.pages.LoginPage">
-        <test-method status="PASS" signature="compose()[pri:0, instance:com.qa.pages.LoginPage@3abbfa04]" name="compose" duration-ms="1" started-at="2020-04-05T17:40:38Z" finished-at="2020-04-05T17:40:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- compose -->
-      </class> <!-- com.qa.pages.LoginPage -->
-    </test> <!-- Page-Run. -->
-  </suite> <!-- Pages -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
