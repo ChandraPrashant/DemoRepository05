@@ -11,6 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import com.qa.utils.ReadPropertyFile;
 import com.test.utility.TestUtil;
 
@@ -35,6 +36,7 @@ public class FreeCRMAccountPageTest extends ReadPropertyFile {
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("freecrm.myaccount.url"));
+		Thread.sleep(2000);
 
 	}
 
@@ -47,16 +49,15 @@ public class FreeCRMAccountPageTest extends ReadPropertyFile {
 		return testData.iterator();
 	}
 
-	@Test(dataProvider = "getTestData", groups = "Smoke")
+	@Test(dataProvider = "getTestData",groups = "Smoke")
 	public void login(String username, String password) throws Exception {
 
 		// WebElements Code
 		driver.findElement(By.cssSelector(prop.getProperty("freecrm.myaccount.username"))).sendKeys(username);
-		Thread.sleep(2000);
 		driver.findElement(By.cssSelector(prop.getProperty("freecrm.myaccount.password"))).sendKeys(password);
 		Thread.sleep(1000);
 		driver.findElement(By.cssSelector(prop.getProperty("freecrm.myaccount.login"))).click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		// Verification Code
 		try {
