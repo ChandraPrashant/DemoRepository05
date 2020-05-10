@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Pages" duration-ms="6489" started-at="2020-04-09T07:47:23Z" finished-at="2020-04-09T07:47:30Z">
+  <suite name="Default suite" duration-ms="93738" started-at="2020-04-21T05:08:28Z" finished-at="2020-04-21T05:10:02Z">
     <groups>
       <group name="Smoke">
-        <method signature="FreeCRMAccountPageTest.login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@146ba0ac]" name="login" class="com.qa.tests.FreeCRMAccountPageTest"/>
+        <method signature="FreeCRMAccountPageTest.login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="login" class="com.qa.tests.FreeCRMAccountPageTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="Page-Run." duration-ms="6489" started-at="2020-04-09T07:47:23Z" finished-at="2020-04-09T07:47:30Z">
+    <test name="Default test" duration-ms="93738" started-at="2020-04-21T05:08:28Z" finished-at="2020-04-21T05:10:02Z">
       <class name="com.qa.tests.FreeCRMAccountPageTest">
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@146ba0ac]" name="login" duration-ms="2034" started-at="2020-04-09T07:47:24Z" data-provider="getTestData" finished-at="2020-04-09T07:47:26Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="setup" is-config="true" duration-ms="15221" started-at="2020-04-21T05:08:28Z" finished-at="2020-04-21T05:08:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="login" duration-ms="23106" started-at="2020-04-21T05:08:44Z" data-provider="getTestData" finished-at="2020-04-21T05:09:07Z">
           <params>
             <param index="0">
               <value>
@@ -23,30 +27,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.qa.tests.FreeCRMAccountPageTest.login(FreeCRMAccountPageTest.java:56)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@146ba0ac]" name="login" duration-ms="2008" started-at="2020-04-09T07:47:26Z" data-provider="getTestData" finished-at="2020-04-09T07:47:28Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="tearDown" is-config="true" duration-ms="592" started-at="2020-04-21T05:09:07Z" finished-at="2020-04-21T05:09:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="setup" is-config="true" duration-ms="14179" started-at="2020-04-21T05:09:07Z" finished-at="2020-04-21T05:09:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="login" duration-ms="2315" started-at="2020-04-21T05:09:22Z" data-provider="getTestData" finished-at="2020-04-21T05:09:24Z">
           <params>
             <param index="0">
               <value>
@@ -59,30 +51,18 @@ at java.lang.Thread.run(Unknown Source)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.qa.tests.FreeCRMAccountPageTest.login(FreeCRMAccountPageTest.java:56)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@146ba0ac]" name="login" duration-ms="2009" started-at="2020-04-09T07:47:28Z" data-provider="getTestData" finished-at="2020-04-09T07:47:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="tearDown" is-config="true" duration-ms="598" started-at="2020-04-21T05:09:24Z" finished-at="2020-04-21T05:09:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="setup" is-config="true" duration-ms="14112" started-at="2020-04-21T05:09:25Z" finished-at="2020-04-21T05:09:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="login" duration-ms="22512" started-at="2020-04-21T05:09:39Z" data-provider="getTestData" finished-at="2020-04-21T05:10:01Z">
           <params>
             <param index="0">
               <value>
@@ -95,30 +75,14 @@ at java.lang.Thread.run(Unknown Source)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.qa.tests.FreeCRMAccountPageTest.login(FreeCRMAccountPageTest.java:56)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@1a0dcaa]" name="tearDown" is-config="true" duration-ms="624" started-at="2020-04-21T05:10:01Z" finished-at="2020-04-21T05:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tests.FreeCRMAccountPageTest -->
-    </test> <!-- Page-Run. -->
-  </suite> <!-- Pages -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
