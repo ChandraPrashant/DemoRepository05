@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Pages]" parallel="classes">
-  <listeners>
-    <listener class-name="com.qa.ExtentReportListener.ExtentReportListener"/>
-  </listeners>
-  <test thread-count="1" name="Page-Run.(failed)" parallel="classes">
-    <groups>
-      <run>
-        <include name="Smoke"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.tests.FreeCRMAccountPageTest">
+      <class name="com.qa.tests.UglyContactUsPageTest">
         <methods>
-          <include name="login" invocation-numbers="0 1 2"/>
+          <include name="submitForm"/>
         </methods>
-      </class> <!-- com.qa.tests.FreeCRMAccountPageTest -->
+      </class> <!-- com.qa.tests.UglyContactUsPageTest -->
     </classes>
-  </test> <!-- Page-Run.(failed) -->
-</suite> <!-- Failed suite [Pages] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
