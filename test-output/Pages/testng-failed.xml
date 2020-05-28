@@ -5,17 +5,19 @@
     <listener class-name="com.qa.ExtentReportListener.ExtentReportListener"/>
   </listeners>
   <test thread-count="1" name="Page-Run.(failed)" parallel="classes">
-    <groups>
-      <run>
-        <include name="Smoke"/>
-      </run>
-    </groups>
     <classes>
       <class name="com.qa.tests.FreeCRMAccountPageTest">
         <methods>
-          <include name="login" invocation-numbers="0 1 2"/>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.tests.FreeCRMAccountPageTest -->
+      <class name="com.qa.tests.UglyContactUsPageTest">
+        <methods>
+          <include name="submitForm"/>
+        </methods>
+      </class> <!-- com.qa.tests.UglyContactUsPageTest -->
     </classes>
   </test> <!-- Page-Run.(failed) -->
 </suite> <!-- Failed suite [Pages] -->
