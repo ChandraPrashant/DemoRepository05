@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Pages" duration-ms="99683" started-at="2020-05-28T07:05:05Z" finished-at="2020-05-28T07:06:44Z">
+  <suite name="Pages" duration-ms="96925" started-at="2020-05-28T07:20:38Z" finished-at="2020-05-28T07:22:15Z">
     <groups>
       <group name="Smoke">
         <method signature="FreeCRMAccountPageTest.login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="login" class="com.qa.tests.FreeCRMAccountPageTest"/>
         <method signature="UglyContactUsPageTest.submitForm()[pri:0, instance:com.qa.tests.UglyContactUsPageTest@4dfa3a9d]" name="submitForm" class="com.qa.tests.UglyContactUsPageTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="Page-Run." duration-ms="99683" started-at="2020-05-28T07:05:05Z" finished-at="2020-05-28T07:06:44Z">
+    <test name="Page-Run." duration-ms="96925" started-at="2020-05-28T07:20:38Z" finished-at="2020-05-28T07:22:15Z">
       <class name="com.qa.tests.FreeCRMAccountPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="setup" is-config="true" duration-ms="12171" started-at="2020-05-28T07:05:05Z" finished-at="2020-05-28T07:05:17Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="setup" is-config="true" duration-ms="11134" started-at="2020-05-28T07:20:39Z" finished-at="2020-05-28T07:20:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="login" duration-ms="22371" started-at="2020-05-28T07:05:17Z" data-provider="getTestData" finished-at="2020-05-28T07:05:40Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="login" duration-ms="23840" started-at="2020-05-28T07:20:50Z" data-provider="getTestData" finished-at="2020-05-28T07:21:14Z">
           <params>
             <param index="0">
               <value>
@@ -31,15 +31,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="612" started-at="2020-05-28T07:05:40Z" finished-at="2020-05-28T07:05:40Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="607" started-at="2020-05-28T07:21:14Z" finished-at="2020-05-28T07:21:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="setup" is-config="true" duration-ms="9961" started-at="2020-05-28T07:05:40Z" finished-at="2020-05-28T07:05:50Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="setup" is-config="true" duration-ms="11237" started-at="2020-05-28T07:21:14Z" finished-at="2020-05-28T07:21:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="login" duration-ms="2943" started-at="2020-05-28T07:05:50Z" data-provider="getTestData" finished-at="2020-05-28T07:05:53Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="login" duration-ms="2325" started-at="2020-05-28T07:21:26Z" data-provider="getTestData" finished-at="2020-05-28T07:21:28Z">
           <params>
             <param index="0">
               <value>
@@ -55,15 +55,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="627" started-at="2020-05-28T07:05:53Z" finished-at="2020-05-28T07:05:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="637" started-at="2020-05-28T07:21:28Z" finished-at="2020-05-28T07:21:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="setup" is-config="true" duration-ms="10273" started-at="2020-05-28T07:05:54Z" finished-at="2020-05-28T07:06:04Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="setup" is-config="true" duration-ms="10226" started-at="2020-05-28T07:21:28Z" finished-at="2020-05-28T07:21:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="login" duration-ms="22914" started-at="2020-05-28T07:06:04Z" data-provider="getTestData" finished-at="2020-05-28T07:06:27Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="login" duration-ms="22958" started-at="2020-05-28T07:21:39Z" data-provider="getTestData" finished-at="2020-05-28T07:22:02Z">
           <params>
             <param index="0">
               <value>
@@ -79,13 +79,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="622" started-at="2020-05-28T07:06:27Z" finished-at="2020-05-28T07:06:28Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.FreeCRMAccountPageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="600" started-at="2020-05-28T07:22:02Z" finished-at="2020-05-28T07:22:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tests.FreeCRMAccountPageTest -->
       <class name="com.qa.tests.UglyContactUsPageTest">
-        <test-method status="PASS" signature="submitForm()[pri:0, instance:com.qa.tests.UglyContactUsPageTest@4dfa3a9d]" name="submitForm" duration-ms="99662" started-at="2020-05-28T07:05:05Z" finished-at="2020-05-28T07:06:44Z">
+        <test-method status="PASS" signature="submitForm()[pri:0, instance:com.qa.tests.UglyContactUsPageTest@4dfa3a9d]" name="submitForm" duration-ms="96906" started-at="2020-05-28T07:20:38Z" finished-at="2020-05-28T07:22:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitForm -->
