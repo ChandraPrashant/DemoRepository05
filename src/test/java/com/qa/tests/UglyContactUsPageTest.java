@@ -33,8 +33,9 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 		System.out.println("Unchanged");
 		System.out.println("Change5Local");
 		System.out.println("Change6");
+		System.out.println("Change5");
 		System.out.println("Unchanged");
-		System.out.println("Change8");
+		System.out.println("Change8Repo");
 		System.out.println("Change9");
 		for (int rowNum = 2; rowNum <= rowCount; rowNum++) {
 		
