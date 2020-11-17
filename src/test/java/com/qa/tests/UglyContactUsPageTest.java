@@ -28,6 +28,7 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 		int rowCount = reader.getRowCount(prop.getProperty("uglysheetname"));
 		System.out.println("test");
 		System.out.println("My local changes");
+		System.out.println("githug changes");
 		for (int rowNum = 2; rowNum <= rowCount; rowNum++) {
 
 			// WebDriver Code
