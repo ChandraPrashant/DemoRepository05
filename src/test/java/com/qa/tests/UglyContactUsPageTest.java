@@ -28,9 +28,11 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 		int rowCount = reader.getRowCount(prop.getProperty("uglysheetname"));
 		System.out.println("Change1");
 		System.out.println("UnChange");
-		System.out.println("Change3");
+		System.out.println("Change2");
+		System.out.println("UnChange");
+		System.out.println("Change4");
 		for (int rowNum = 2; rowNum <= rowCount; rowNum++) {
-
+		
 			// WebDriver Code
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
