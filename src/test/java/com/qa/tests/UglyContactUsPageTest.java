@@ -26,7 +26,9 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 		ReadExcelData reader = new ReadExcelData(System.getProperty("user.dir") + prop.getProperty("filepath"));
 
 		int rowCount = reader.getRowCount(prop.getProperty("uglysheetname"));
-		
+		System.out.println("Change1");
+		System.out.println("UnChange");
+		System.out.println("Change1");
 		for (int rowNum = 2; rowNum <= rowCount; rowNum++) {
 
 			// WebDriver Code
