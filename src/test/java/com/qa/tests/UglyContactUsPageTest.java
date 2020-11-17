@@ -22,9 +22,9 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + prop.getProperty("driverpath"));
 		// WebDriverManager.chromedriver().setup();
-		System.out.println("test");
-		ReadExcelData reader = new ReadExcelData(System.getProperty("user.dir") + prop.getProperty("filepath"));
 		
+		ReadExcelData reader = new ReadExcelData(System.getProperty("user.dir") + prop.getProperty("filepath"));
+
 		int rowCount = reader.getRowCount(prop.getProperty("uglysheetname"));
 		System.out.println("test");
 		System.out.println("githdug changes");
@@ -39,7 +39,7 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.get(prop.getProperty("uglys.contactus.url"));
 			driver.navigate().refresh();
-
+			
 			// Parameterization
 			String firstname = reader.getCellData(prop.getProperty("uglysheetname"), "FirstName", rowNum);
 			String lastname = reader.getCellData(prop.getProperty("uglysheetname"), "LastName", rowNum);
