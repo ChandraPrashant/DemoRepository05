@@ -26,12 +26,12 @@ public class UglyContactUsPageTest extends ReadPropertyFile {
 		ReadExcelData reader = new ReadExcelData(System.getProperty("user.dir") + prop.getProperty("filepath"));
 
 		int rowCount = reader.getRowCount(prop.getProperty("uglysheetname"));
-		System.out.println("Change1");
-		System.out.println("Change2");
+		System.out.println("Change1Local");
+		System.out.println("Change2Local");
 		System.out.println("Change3");
-		System.out.println("Change4");
+		System.out.println("Change4Local");
 		System.out.println("Unchanged");
-		System.out.println("Change5");
+		System.out.println("Change5Local");
 		System.out.println("Change6");
 		System.out.println("Unchanged");
 		System.out.println("Change8");
